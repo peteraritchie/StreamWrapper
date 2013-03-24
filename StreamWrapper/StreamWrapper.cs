@@ -61,5 +61,14 @@ namespace StreamWrapper
 			get { return Stream.Position; }
 			set { Stream.Position = value; }
 		}
+
+		protected override void Dispose(bool disposing)
+		{
+			base.Dispose(disposing);
+			// dispose stream
+			using (Stream)
+			{
+			}
+		}
 	}
 }
