@@ -1,7 +1,7 @@
 StreamWrapper
 =============
 
-StreamWrapper is a simple class that implements `Stream` and wraps a `Stream` object and is a simple pass-through wrapper.  `StreamWrapper` is entended to wrap a `Stream` object so that the lifespan of that `Stream` object can be matched to the lifespan of another.
+StreamWrapper is a simple class that implements `Stream` and wraps a `Stream` object and is a simple pass-through wrapper.  `StreamWrapper` is intended to wrap a `Stream` object to implement the Decorator pattern so that the lifespan of that `Stream` object can be matched to the lifespan of another.
 
 For example, you might create an `IsolatedStorageFileStream` object from an `IsolatedStorageFile` object:
 
